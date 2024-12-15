@@ -22,9 +22,11 @@ import naive from 'naive-ui'
 import mitt from 'mitt'
 
 import App from './App'
+import Antd from 'ant-design-vue'
 import router from './router'
 import i18n from './locales'
 import '@/assets/styles/main.scss'
+import 'ant-design-vue/dist/reset.css' // 引入 antd 的样式
 
 const app = createApp(App)
 const pinia = createPinia()
@@ -35,5 +37,6 @@ pinia.use(piniaPluginPersistedstate)
 app.use(router)
 app.use(naive)
 app.config.globalProperties.mittBus = mitt()
+app.use(Antd)
 
 app.mount('#app')

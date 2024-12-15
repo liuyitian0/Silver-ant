@@ -19,7 +19,6 @@ export default {
   playground: '查询控制台',
   metadata: '元数据管理',
   cdc_ingestion: 'CDC 集成',
-  new_add: '数据集成',
   system: '系统管理',
   light: '浅色',
   dark: '暗色',
@@ -28,4 +27,9 @@ export default {
   user: '用户管理',
   role: '角色管理',
   cluster: '集群管理',
+  dataimport: '数据导入',
+  dataintergration: '数据集成',
+  datamodel: '数据模型',
+  offlinesync: '离线同步',
+  realtimesync: '实时同步',
 }

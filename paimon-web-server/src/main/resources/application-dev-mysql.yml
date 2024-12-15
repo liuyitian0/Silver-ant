@@ -19,7 +19,6 @@ spring:
     username: root
     password: Zsins%TGB7ujm
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    driver-class-name: com.mysql.jdbc.Driver
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10

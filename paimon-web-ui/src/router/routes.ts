@@ -20,6 +20,7 @@ import playground_routes from './modules/playground'
 import metadata_routes from './modules/metadata'
 import cdc_ingestion_routes from './modules/cdc_ingestion'
 import system from './modules/system'
+import dataintergration from './modules/dataintergration'     // by et
 import job from './modules/job'
 
 /**
@@ -36,6 +37,7 @@ const basePage: RouteRecordRaw = {
     cdc_ingestion_routes,
     system,
     job,
+    dataintergration,       // by et
   ],
 }
 /**

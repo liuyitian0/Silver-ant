@@ -15,21 +15,36 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License. */
 
-export default {
-  playground: 'Playground',
-  metadata: 'MetaData',
-  cdc_ingestion: 'CDC Ingestion',
-  system: 'System',
-  light: 'Light',
-  dark: 'Dark',
-  cancel: 'Cancel',
-  confirm: 'Confirm',
-  user: 'User',
-  role: 'Role',
-  cluster: 'Cluster',
-  dataimport: 'Data Import',
-  dataintergration: 'Data Intergration',
-  datamodel: 'Data Module',
-  offline_sync: 'Offline Sync',
-  realtime_sync: 'Realtime Sync',
-}
+import styles from './index.module.scss'
+import { useTable } from './use-table'
+
+export default defineComponent({
+  name: 'ListPage',
+  emits: ['cdcJobSubmit'],
+  setup(_, ctx) {
+    const { t } = useLocaleHooks()
+
+    const { tableVariables, getTableData } = useTable(ctx)
+    getTableData()
+    onActivated(() => {
+      getTableData()
+    })
+    return {
+      t,
+      ...toRefs(tableVariables),
+      getTableData,
+    }
+  },
+  render() {
+    return (
+      <div class={styles['list-page']}>
+        <n-data-table
+          columns={this.columns}
+          data={this.data}
+          remote
+          pagination={this.pagination}
+        />
+      </div>
+    )
+  },
+})

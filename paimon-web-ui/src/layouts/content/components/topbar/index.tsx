@@ -20,8 +20,7 @@ import MenuBar from '../menubar'
 import ToolBar from '../toolbar'
 import styles from './index.module.scss'
 // import logoImage from '@/assets/logo.svg'
-// import logoImage from '@/assets/logo.jpeg'
-import logoImage from '@/assets/yt.jpeg'
+import logoImage from '@/assets/sa.jpeg'
 
 export default defineComponent({
   props: {

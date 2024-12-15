@@ -23,6 +23,7 @@ import cdc from './modules/cdc'
 import job from './modules/job'
 import system from './modules/system'
 import common from './modules/common'
+import dataintergration from './modules/dataintergration'
 
 export default {
   login,
@@ -33,4 +34,5 @@ export default {
   job,
   system,
   common,
+  dataintergration,
 }

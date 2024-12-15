@@ -16,20 +16,18 @@ specific language governing permissions and limitations
 under the License. */
 
 export default {
-  playground: 'Playground',
-  metadata: 'MetaData',
-  cdc_ingestion: 'CDC Ingestion',
-  system: 'System',
-  light: 'Light',
-  dark: 'Dark',
-  cancel: 'Cancel',
-  confirm: 'Confirm',
-  user: 'User',
-  role: 'Role',
-  cluster: 'Cluster',
-  dataimport: 'Data Import',
-  dataintergration: 'Data Intergration',
-  datamodel: 'Data Module',
-  offline_sync: 'Offline Sync',
-  realtime_sync: 'Realtime Sync',
+  // by et
+  path: '/dataintergration',
+  name: 'dataintergration',
+  meta: { title: 'dataintergration' },
+  children: [
+    {
+      path: '/dataintergration/offlinesync',
+      name: 'dataintergration-offlinesync',
+      meta: { title: 'offlinesync' },
+      component: () => import('@/views/dataIntergration/offlinesync/index.tsx'),
+    },
+
+
+  ],
 }

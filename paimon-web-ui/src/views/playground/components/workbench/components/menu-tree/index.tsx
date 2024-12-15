@@ -65,16 +65,6 @@ export default defineComponent({
                       default: () => h(FileTrayFullOutline),
                     }),
                 },
-                {
-                  label: 'new_add',
-                  key: '3',
-                  type: 'file',
-                  content: 'select * from dual; -- 该Sql 目前是前端写死的',
-                  prefix: () =>
-                    h(NIcon, null, {
-                      default: () => h(FileTrayFullOutline),
-                    }),
-                },
               ],
             },
           ],

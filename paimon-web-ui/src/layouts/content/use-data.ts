@@ -80,6 +80,22 @@ export function useData() {
         icon: renderIcon(ClusterOutlined),
       }],
     },
+         // by et
+    {
+      label: () => renderLabel(t('layout.dataintergration'), 'dataintergration'),
+      key: 'dataintergration',
+      menuName: 'dataintergration',
+      icon: renderIcon(ClusterOutlined),
+      sideMenuOptions: [
+          {
+        label: () => renderLabel(t('layout.offlinesync'), 'dataintergration'),
+        key: '/dataintergration/offlinesync',
+        menuName: 'offlinesync',
+        icon: renderIcon(ClusterOutlined),
+      }],
+    },
+    // by et end
+
   ]))
   return {
     menuOptions,

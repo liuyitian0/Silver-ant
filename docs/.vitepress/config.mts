@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Paimon Web",
-  description: "Web UI for Apache Paimon",
+  description: "Web UI for Silver Ant",
 
   themeConfig: {
     logo: "/favicon_blue.svg",
@@ -15,7 +15,7 @@ export default defineConfig({
       {
         text: 'Get Started',
         items: [
-          { text: 'What is Paimon Web', link: '/src/guide/about' },
+          { text: 'What is Silver-Ant Web', link: '/src/guide/about' },
           { text: 'Quick Start', link: '/src/guide/quick-start' }
         ]
       }

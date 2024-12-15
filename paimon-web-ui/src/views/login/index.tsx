@@ -53,7 +53,7 @@ export default defineComponent({
             <div class={styles['form-container']}>
               <n-space align="center" justify="center">
                 <img class={styles.logo} src={logoImage} alt="logo-image" />
-                <h1>Yt tel</h1>
+                <h1>Silver Ant</h1>
               </n-space>
               <n-form
                 ref="loginForm"
